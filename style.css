@@ -1,0 +1,344 @@
+body {
+    font-family: Arial;
+    line-height: 1.5;
+    background-color: #f4f7fb;
+    color: #1e3a5f;
+}
+
+header {
+    background-color: #1e3a5f;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    position: sticky;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.icon1 {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+header h1 {
+    font-size: 27px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+    font-size: 22px;
+}
+
+nav a:hover {
+    color: #ff00bf;
+}
+
+.btn-login {
+    background-color: #ff00bf;
+    padding: 8px 16px;
+    border-radius: 8px;
+}
+
+.btn-login:hover {
+    background-color: #ff00bf;
+    color: white;
+}
+
+.casa {
+    height: 90vh;
+    background: url("immagini/sfondo.png");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.casa h2 {
+    color: white;
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.casa p {
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+.btn-primary {
+    background-color: #ff00bf;
+    color: white;
+    text-decoration: none;
+    padding: 14px 28px;
+    border-radius: 10px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #ff00bf;
+}
+
+section {
+    padding: 80px 50px;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 36px;
+    color: #1e3a5f;
+}
+
+.lista-servizi {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.servizio {
+    background-color: white;
+    padding: 30px;
+    width: 300px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.servizio:hover {
+    transform: translateY(-10px);
+}
+
+.servizio h3 {
+    margin-bottom: 15px;
+    color: #ff00bf;
+}
+
+.funzionamento {
+    background: #f4f7fb;
+}
+
+.funzionamento ol {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0;
+    counter-reset: step;
+}
+
+.funzionamento li {
+    list-style: none;
+    background: white;
+    margin-bottom: 20px;
+    padding: 20px 25px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    transition: 0.3s;
+    position: relative;
+}
+
+.funzionamento li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.12);
+}
+
+.funzionamento li {
+    font-size: 1rem;
+    color: #1e3a5f;
+}
+
+.lista-prezzi {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.piano {
+    background-color: white;
+    padding: 35px;
+    width: 320px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.piano:hover {
+    transform: scale(1.05);
+}
+
+.piano h3 {
+    color: #1e3a5f;
+    margin-bottom: 10px;
+}
+
+.piano p {
+    font-size: 28px;
+    color: #ff00bf;
+    margin-bottom: 20px;
+}
+
+.piano ul {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.piano li {
+    margin-bottom: 10px;
+}
+
+.piano button {
+    background-color: #ff00bf;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.piano button:hover {
+    background-color: #ff00bf;
+}
+
+#login form {
+    max-width: 450px;
+    margin: auto;
+    background-color: white;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+#login label {
+    display: block;
+    margin-bottom: 8px;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+#login input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+#login button {
+    width: 100%;
+    margin-top: 20px;
+    background-color: #1e3a5f;
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+#login button:hover {
+    background-color: #ff00bf;
+}
+
+footer {
+    background-color: #1e3a5f;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+footer ul {
+    list-style: none;
+    margin-top: 10px;
+}
+
+footer li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+    font-size: 32px;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    right: 30px;
+    top: 20px;
+}
+
+@media (max-width: 768px) {
+
+    .hamburger {
+        display: block;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        background-color: #1e3a5f;
+        position: absolute;
+        top: 80px;
+        right: 0;
+        width: 220px;
+        padding: 20px;
+        border-radius: 0 0 0 12px;
+    }
+
+    .menu li {
+        margin: 15px 0;
+    }
+
+    #menu-toggle:checked + .hamburger + nav .menu {
+        display: flex;
+    }
+
+    header {
+        position: relative;
+    }
+}
+
+
